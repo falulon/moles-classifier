@@ -61,8 +61,10 @@ async def analyze(request):
     img_data = await request.form()
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
-    prediction = learn.predict(img)[0]
-    return JSONResponse({'result': str(prediction)})
+    prediction, selected_class, percents = learn.predict(img)[0]
+    chances = percents[selected_class] * 100
+    msg = f"{prediction} ({chances}%)"  
+    return JSONResponse({'result': str(msg)})
 
 
 if __name__ == '__main__':
