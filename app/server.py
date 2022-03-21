@@ -1,6 +1,7 @@
 import aiohttp
 import asyncio
 import uvicorn
+import os
 from fastai import *
 from fastai.vision import *
 from io import BytesIO
@@ -66,4 +67,7 @@ async def analyze(request):
 
 if __name__ == '__main__':
     if 'serve' in sys.argv:
-        uvicorn.run(app=app, host='0.0.0.0', port=5000, log_level="info")
+        port = int(os.environ.get('PORT', 5000))
+        uvicorn.run(app=app, host='0.0.0.0', port=port, log_level="info")
+        # uvicorn.run(app=app, host='0.0.0.0', port=5000, log_level="info")
+
