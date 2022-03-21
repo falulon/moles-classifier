@@ -3,6 +3,7 @@ body {
     height: 920px;
     background-size: cover;
     background-position: center;
+    font-family: sans-serif;
 }
 
 .no-display {
