@@ -5,34 +5,7 @@
   <link rel="Stylesheet" type="text/css" href="../static/croppie-style.css"></link>
   <link rel='stylesheet' href='../static/style.css'>
   <script src="../static/croppie.js"></script>
-
-<script defer>
-      var c; 
-      function crop(location) {
-      c = new Croppie(document.getElementById('image'),{
-          enableExif: true,
-          viewport: {
-              width: 200,
-              height: 200,
-              // type: 'circle'
-          },
-          boundary: {
-              width: 250,
-              height: 250
-          }
-      });
-
-c.bind({
-    url: location,
-    orientation: 1
-  });
-
-}
- async function cropSave() { 
-   var params = {type: 'base64', size: 'viewport', format: 'jpeg', quality: 1, circle: false }
-  return await c.result(params);
- }
-      </script>
+  <script src="../static/cropperElement.js" defer></script>
 </head>
 <body>
 <div>
