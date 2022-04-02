@@ -56,6 +56,7 @@ heroku addons:add heroku-postgresql:hobby-dev --app my-classifier-app-name
 
 Background photo: [Leandro Fregoni (unsplash)](https://unsplash.com/@okcapturas)
 
+[Basic template](https://github.com/muellerzr/fastai-v3-Render)
 
 
 
