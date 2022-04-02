@@ -1,4 +1,6 @@
+![image](https://user-images.githubusercontent.com/79255543/161380734-ca557975-d73d-439d-bf07-938d546347ca.png)
 # Moles Classifier / Starter template for deploying [fast.ai](https://www.fast.ai) models 
+Based on [this template](https://github.com/muellerzr/fastai-v3-Render)
 
 This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models.
 
@@ -56,7 +58,6 @@ heroku addons:add heroku-postgresql:hobby-dev --app my-classifier-app-name
 
 Background photo: [Leandro Fregoni (unsplash)](https://unsplash.com/@okcapturas)
 
-[Basic template](https://github.com/muellerzr/fastai-v3-Render)
 
 
 
