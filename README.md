@@ -9,7 +9,7 @@ The sample app described here is up at http://moles-classifier.herokuapp.com/ Te
 You can test your changes locally by installing Docker and using the following command:
 
 ```
-docker build -t moles-classifier . && docker run --rm -it -p 5000:5000 fastai-v3
+docker build -t moles-classifier . && docker run --rm -it -p 5000:5000 moles-classifier
 ```
 
 It will run a container and initiate server.py and serve app/view/index.html on your localhost:5000
